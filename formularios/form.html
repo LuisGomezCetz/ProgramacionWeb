@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+</head>
+<body>
+	<!-- <form action="javascript:recibeform()" method="post" autocomplete="off">  -->
+
+	<form action="./procesaform.php" method="post" autocomplete="off">
+	<label for="nombre"> Escribe tu nombre: </label>
+	
+	<input type="text" name="nombre" value="" placeholder="Escribe tu nombre" />
+	<br/>
+
+		<label for="email"> Escribe tu email: </label>
+        <input type="email" name="email" value="" placeholder="Escrbe tu email" required> <br>
+        <label for="Contraseña"> Escribe tu contraseña: </label>
+        <input type="password"name="Contraseña" value=""><br>
+        <p>Checkbox</p>
+
+       <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		  <label for="vehicle1"> Tengo una  bicicleta</label><br>
+		  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		  <label for="vehicle2"> Tengo un carro</label><br>
+		  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		  <label for="vehicle3"> Tengo un bote </label>
+        <p>RadioButton</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+		  <label for="html">HTML</label><br>
+		  <input type="radio" id="css" name="fav_language" value="CSS">
+		  <label for="css">CSS</label><br>
+		  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+		  <label for="javascript">JavaScript</label><br>
+
+        <input type="file"><br>
+        <input type="date"><br>
+        <input type="submit" value="Enviar" />
+        <input type="reset"><br>
+	</form>
+
+</body>
+</html>
