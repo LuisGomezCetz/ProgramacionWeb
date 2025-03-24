@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="principal.css">
+	<title>Ejemplo de validaciones</title>
+</head>
+<body>
+	<h1>Ejemplo de validaciones</h1>
+	<hr>
+
+	<form action="/" method="post">
+		 <label for="username">Usuario</label>
+  	<input type="text" name="username" placeholder="Por ejemplo, Juan"
+          minlength="5" maxlength="40" required title="Por favor, teclea un usuario que contenga entre 5 y 40
+          caracteres">
+ 	<label for="password">Password</label>
+  	<input type="password" name="password" placeholder="Contraseña"
+          minlength="11">
+          <br/><br/>
+          <input type="submit" value="enviar">
+
+
+
+		
+	</form>
+	 <br/><br/>
+
+	<form method="post" action="/send/">
+      <label for="number">Numero</label>
+  <input type="number" name="number" placeholder="5"
+          min="5" max="10" step="2">
+   <label for="date">Fecha de inicio</label>
+  <input type="date" name="date" placeholder="2024-07-22"
+          min="2024-01-01" max="2024-12-01" step="2">
+</form>
+
+
+</body>
+</html>
